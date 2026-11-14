@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Reunião fechada | RARA Circle com Tayná Rubbo</title>
+<title>Nasce o RARA Circle | Reunião fechada 17/11</title>
 <meta name="description" content="Reunião fechada de pré-lançamento com Tayná Rubbo. 17 de novembro, às 10h, online e ao vivo.">
-<meta property="og:title" content="Reunião fechada | RARA Circle com Tayná Rubbo">
+<meta property="og:title" content="Nasce o RARA Circle | Reunião fechada 17/11">
 <meta property="og:description" content="17 de novembro, às 10h. Um novo projeto para você faturar mais em 2027, com valor especial só para quem estiver ao vivo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -134,6 +134,23 @@ form .btn:disabled{opacity:.6;cursor:default}
 .nota{font-size:13px;color:var(--mist);line-height:1.5}
 .hp{position:absolute;left:-9999px}
 
+/* hero quote */
+.hero h1{font-size:clamp(34px,4.3vw,56px)}
+.sign{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--mist)}
+/* palavras */
+.words{display:grid;grid-template-columns:repeat(6,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.words div{padding:34px 12px;text-align:center;font-weight:200;font-size:clamp(20px,2vw,26px);min-width:0}
+.words div+div{border-left:1px solid var(--line)}
+.words div:nth-child(even){color:var(--mist)}
+.born{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,88px);align-items:end;margin-top:clamp(56px,7vw,88px)}
+.born>*{min-width:0}
+.born .big{font-weight:100;font-size:clamp(52px,7.4vw,104px);line-height:.95;letter-spacing:-.01em}
+.born .big span{color:var(--pink);font-weight:200}
+.born ul{list-style:none}
+.born li{font-weight:200;font-size:clamp(22px,2.2vw,28px);line-height:1.3;padding:22px 0;border-top:1px solid var(--line)}
+@media (max-width:900px){.words{grid-template-columns:repeat(3,1fr)}.words div:nth-child(4){border-left:0}.words div:nth-child(n+4){border-top:1px solid var(--line)}.born{grid-template-columns:1fr}}
+@media (max-width:560px){.words{grid-template-columns:1fr 1fr}.words div{border-left:0!important;border-top:1px solid var(--line)}.words div:nth-child(-n+2){border-top:0}.words div:nth-child(even){border-left:1px solid var(--line)!important}}
+
 /* rodapé */
 footer{border-top:1px solid var(--line);padding:56px 0 64px;text-align:center}
 footer .wrap{display:flex;flex-direction:column;align-items:center;gap:22px}
@@ -164,7 +181,7 @@ footer .mono{color:var(--dim);font-size:11px}
 <header class="top">
   <div class="wrap">
     <img src="reuniao/logo-rara-circle.png" alt="RARA Circle" width="300" height="78">
-    <span class="mono">17.11 | 10h</span>
+    <span class="mono">Reunião fechada | 17.11</span>
   </div>
 </header>
 
@@ -172,16 +189,17 @@ footer .mono{color:var(--dim);font-size:11px}
 <section class="hero">
   <div class="wrap">
     <div class="copy">
-      <div class="mono pink">Reunião fechada | Pré-lançamento</div>
-      <div class="date">17.11</div>
-      <h1>Um novo projeto exclusivo para você <span>faturar mais em 2027.</span></h1>
-      <p class="lead">Com um plano claro e suporte para o que precisa ser feito. A Tayná apresenta tudo em primeira mão, com um valor especial só para quem estiver na reunião.</p>
+      <div class="mono pink">Reunião fechada | 17/11 às 10h</div>
+      <h1>Eu entendi que, para cumprir o que eu vim fazer no mundo, <span>eu precisava ter coragem de mudar.</span></h1>
+      <div class="sign">Tayná Rubbo</div>
+      <p class="lead">No dia 17, em uma reunião fechada, eu abro o novo projeto que preparei para você faturar mais em 2027, com um plano claro e suporte do que precisa ser feito. Quem estiver comigo ao vivo garante um valor especial.</p>
       <div class="chips mono">
+        <span><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="1"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>17.11</span>
         <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>10h</span>
         <span><svg viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="1"/><path d="M16 10l6-3v10l-6-3"/></svg>Online e ao vivo</span>
       </div>
       <div class="cta">
-        <a class="btn" href="#convite">Quero receber meu convite</a>
+        <a class="btn" href="#convite">Quero estar na sala</a>
         <small>Acesso pelo grupo VIP no WhatsApp</small>
       </div>
     </div>
@@ -192,25 +210,38 @@ footer .mono{color:var(--dim);font-size:11px}
   </div>
 </section>
 
-<div class="ticker" aria-hidden="true"><div>
-  <span>Reunião fechada</span><i>·</i><span>RARA Circle</span><i>·</i><span>17.11 às 10h</span><i>·</i><span>Pré-lançamento</span><i>·</i><span>Valor especial ao vivo</span><i>·</i>
-  <span>Reunião fechada</span><i>·</i><span>RARA Circle</span><i>·</i><span>17.11 às 10h</span><i>·</i><span>Pré-lançamento</span><i>·</i><span>Valor especial ao vivo</span><i>·</i>
-</div></div>
+<div class="ticker" aria-hidden="true"><div><span>Comunidade</span><i>·</i><span>Negócios</span><i>·</i><span>Repertório</span><i>·</i><span>Conexão</span><i>·</i><span>Intuição</span><i>·</i><span>Leveza</span><i>·</i><span>Comunidade</span><i>·</i><span>Negócios</span><i>·</i><span>Repertório</span><i>·</i><span>Conexão</span><i>·</i><span>Intuição</span><i>·</i><span>Leveza</span><i>·</i></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="mono pink" style="margin-bottom:28px">Viver a vida por inteiro</div>
+    <div class="words">
+      <div>comunidade</div><div>negócios</div><div>repertório</div><div>conexão</div><div>intuição</div><div>leveza</div>
+    </div>
+    <div class="born">
+      <div class="big">Nasce o <span>RARA Circle.</span></div>
+      <ul>
+        <li>Um lugar para viver a vida RARA por inteiro.</li>
+        <li>Um lugar para ninguém precisar caminhar sozinha.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 <section>
   <div class="wrap">
     <div class="head">
       <div class="t">
         <div class="mono pink">Na reunião</div>
-        <h2>O que você vai ver <span>ao vivo.</span></h2>
+        <h2>O que eu vou abrir <span>no dia 17.</span></h2>
       </div>
-      <p>Uma reunião fechada, no estilo sala secreta, para quem quer saber antes de todo mundo. É ali que a Tayná abre o novo projeto do Método R.A.R.A.</p>
+      <p>Uma reunião fechada, para quem quer saber antes de todo mundo. Eu vou te mostrar o que construí, como funciona e como entrar.</p>
     </div>
     <div class="items">
       <div class="item">
         <svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
-        <h3>O novo projeto em primeira mão</h3>
-        <p>O RARA Circle: o que é, como funciona e para quem ele foi criado.</p>
+        <h3>O RARA Circle por dentro</h3>
+        <p>O que é, como funciona e para quem eu criei esse lugar.</p>
       </div>
       <div class="item">
         <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
@@ -224,7 +255,7 @@ footer .mono{color:var(--dim);font-size:11px}
       </div>
       <div class="item">
         <svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="1"/><path d="M8 11V7.5a4 4 0 0 1 8 0V11"/><path d="M12 15v2"/></svg>
-        <h3>Uma condição só para quem estiver lá</h3>
+        <h3>Uma condição só para quem estiver comigo</h3>
         <p>Quem estiver ao vivo garante um valor especial para entrar no RARA Circle.</p>
       </div>
     </div>
@@ -233,8 +264,8 @@ footer .mono{color:var(--dim);font-size:11px}
 
 <section class="statement">
   <div class="wrap">
-    <h2>2027 pode ser o seu ano de maior faturamento. <span>E também o mais leve.</span></h2>
-    <p>Para isso você não precisa dar conta de tudo sozinha. Precisa de um plano claro, de um ritmo para seguir todo mês e de mulheres no mesmo caminho. <b>É isso que a Tayná vai te mostrar no dia 17, às 10h.</b></p>
+    <h2>Negócio forte. <span>Vida leve.</span></h2>
+    <p>Você não precisa dar conta de tudo sozinha. Precisa de um plano claro, de um ritmo para seguir todo mês e de mulheres no mesmo caminho. <b>É isso que eu vou te mostrar no dia 17, às 10h.</b></p>
   </div>
 </section>
 
@@ -272,13 +303,13 @@ footer .mono{color:var(--dim);font-size:11px}
 <section class="bio" style="padding-top:0">
   <div class="wrap">
     <div>
-      <div class="mono pink" style="margin-bottom:22px">Quem conduz</div>
+      <div class="mono pink" style="margin-bottom:22px">Quem te convida</div>
       <div class="name">Tayná<br>Rubbo</div>
     </div>
     <div class="txt">
-      <p><b>Empresária, mãe e esposa. Criadora do Método R.A.R.A.</b></p>
-      <p>São 10 anos de experiência em vendas para empreendedoras e centenas de mulheres orientadas a construir negócios mais claros, consistentes e alinhados com a vida que elas querem.</p>
-      <p>No dia 17, ela apresenta o projeto que criou para caminhar com você em 2027.</p>
+      <p><b>Sou empresária, mãe e esposa. Criei o Método R.A.R.A.</b></p>
+      <p>São 10 anos ajudando empreendedoras a vender, e centenas de mulheres que construíram negócios mais claros, consistentes e alinhados com a vida que elas querem.</p>
+      <p>Agora eu quero caminhar com muito mais mulheres. E quero você do meu lado nessa nova fase.</p>
       <p class="quote">O seu maior empreendimento é a sua vida.</p>
     </div>
   </div>
@@ -289,8 +320,8 @@ footer .mono{color:var(--dim);font-size:11px}
     <div class="side">
       <div class="mono pink">Reunião fechada | 17/11 10h00</div>
       <div class="date">17.11</div>
-      <h2>Garanta o seu <span>convite.</span></h2>
-      <p class="lead">A reunião é gratuita, online e ao vivo. O link e a condição especial são liberados só no grupo VIP do WhatsApp.</p>
+      <h2>O melhor do RARA <span>ainda está por vir.</span></h2>
+      <p class="lead">A reunião é gratuita, online e ao vivo. O link e a condição especial vão ser liberados só no grupo VIP do WhatsApp.</p>
     </div>
     <form id="f" novalidate>
       <h3>Receba seu convite</h3>
